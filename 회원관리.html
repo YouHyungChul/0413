@@ -125,14 +125,17 @@
         function getList() {
             var tag="<table border='1px' width='100%'>";
             tag+="<tr>"; //천장
-                tag+="<td>시도</td>";
-                tag+="<td>구군</td>";
-                tag+="<td>아이디</td>";
-                tag+="<td>성별</td>";
-                tag+="<td>이름</td>";
-                tag+="<td>급여</td>";
+            tag+="<td>시도</td>";
+            tag+="<td>구군</td>";
+            tag+="<td>아이디</td>";
+            tag+="<td>성별</td>";
+            tag+="<td>이름</td>";
+            tag+="<td>급여</td>";
             tag+="</tr>"; //바닥
 
+            tag+="<tr>";
+            tag+="<td colspan='6' align='right'>합계:.........원</td>";
+            tag+="</tr>";
             tag+="</table>";
             
             list.innerHTML=tag;
